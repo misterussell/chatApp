@@ -53,5 +53,7 @@
     "react-addons-test-utils": "^15.3.0",
     "watchify": "^3.7.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
 }
