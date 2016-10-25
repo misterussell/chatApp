@@ -2,11 +2,10 @@ import $ from 'jquery';
 import Session from './Session';
 
 function renderLogin(session) {
-  window.location.hash = '';
   let logoBlock = $('.logoBlock');
   let chatBlock = $('.chatBlock');
   let logoImage = `<img src="http://www.fillmurray.com/200/200" /img>`;
-  let logoText = `<h1>Burt Bacha-Chat</h1>`
+  let logoText = `<h1>Burt Bacha-Chat</h1>`;
   let userForm = `
     <form class="newUser">
       <input type="text" class="userInput" value="">
@@ -24,7 +23,7 @@ function renderLogin(session) {
     let user = newUser.find('.userInput').val();
     session.userName = user;
     // console.log(user);
-    console.log(session);
+    // console.log(session);
     location.hash = '#chat';
     return session;
   });
