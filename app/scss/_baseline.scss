@@ -2,5 +2,13 @@ body {
   font-size: 62.5%;
   font-family: 'Abhaya Libre', serif;
   text-align: center;
-  margin: 0 auto;
+  margin: 1rem auto;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
 }

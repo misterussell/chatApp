@@ -1,11 +1,66 @@
-.messages {
-  margin: 0 auto;
-  width: 80vw;
-  height: 80vh;
-  background: rgba(#00e8ff, 0.46);
+.chatBlock {
+  font-size: 1rem;
+  box-sizing: border-box;
+
+  .messages {
+    margin: .5rem auto;
+    padding: .25rem;
+    width: 80vw;
+    height: 80vh;
+    background: linear-gradient(to bottom, #15a0dd 0%,#7db9e8 46%,#7db9e8 46%,#ffffff 100%);
+    box-sizing: border-box;
+
+    .postDetails {
+
+    }
+
+    .delete {
+
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+  }
+
 }
 
-.textArea {
-  height: 15vh;
-  width: 50vw;
+.messageBlock {
+  width: 80vw;
+  margin: 0 auto;
+
+  .newMessage {
+    content: '';
+    display: block;
+    clear: both;
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+  }
+  .textArea {
+    float: left;
+    height: 10vh;
+    width: 60vw;
+    box-sizing: border-box;
+    border: solid .1rem #42da96;
+    font-size: 2rem;
+
+  }
+
+  .postMessage {
+    border: none;
+    // display: inline-block;
+    height: 10vh;
+    width: 20vw;
+    vertical-align: top;
+    font-size: 2rem;
+    font-weight: 600;
+    background: #42da96;
+    color: white;
+    float: left;
+  }
+
 }

@@ -16,20 +16,21 @@ const Router = Backbone.Router.extend({
   },
 
   renderLogin: () => {
+    $('.messages').hide();
+    $('.messageBlock').hide();
     renderLogin(session);
+
   },
 
   renderChat: () => {
-    $('.chatBlock').empty();
+    $('.messages').show();
+    $('.messageBlock').show();
     $('.logoBlock').empty();
-    $('.messageBlock').empty();
-    renderChat(session);
     renderMessenger(session);
-    // window.clearTimeout(timeoutID);
-    // window.clearTimeout(chatRefresh);
-    // const chatRefresh = window.setInterval(function() {
-    //   renderChat();
-    // }, 1000);
+    // renderChat(session);
+    let chatRefresh = window.setInterval(function() {
+      renderChat(session);
+    }, 1000);
   }
 });
 

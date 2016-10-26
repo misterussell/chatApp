@@ -1,0 +1,38 @@
+.logoBlock {
+  img {
+    width: 30vw;
+  }
+}
+
+.newUser {
+  width: 15rem;
+  margin: 0 auto;
+
+  display: block;
+  content: '';
+  clear: both;
+  box-sizing: border-box;
+
+  font-size: 1rem;
+
+  .userInput {
+    width: 10rem;
+    height: 1.5rem;
+    border: solid .1rem #42da96;
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .login {
+    width: 5rem;
+    height: 1.5rem;
+    box-sizing: border-box;
+    float: left;
+    border: none;
+    color: white;
+    background-color: #42da96;
+    font-weight: bold;
+
+  }
+
+}
